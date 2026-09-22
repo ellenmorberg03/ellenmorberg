@@ -1,0 +1,874 @@
+/* =====================================
+   Google Font och Gurndläggande inställningar
+===================================== */
+
+/* Tar bort standardmarginaler och padding samt gör boxmodellen mer förutsägbar */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Mjuk scrollning mellan sektioner */
+/* Användes inte nu men finns kvar då jag har id i html och detta kan vara aktuelt att använda i framtiden om sidan ska redigeras */
+html{
+    scroll-behavior:smooth;
+}
+
+/* Grundinställningar för hela sidan */
+body{
+
+    font-family:"Inter",sans-serif;
+
+    background:var(--white);
+
+    color:var(--black);
+
+    line-height:1.7;
+}
+
+/* =====================
+   VARIABLES
+===================== */
+
+:root{
+
+    --dark-blue:#0c2850;
+    --blue:#273c7c;
+    --light-blue:#697abe;
+    --black:#06070c;
+    --white:#FAFAF7;
+
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+h1{
+    font-weight: 700;
+}
+
+/* =====================================
+   Container
+===================================== */
+
+/* Begränsar innehållets bredd och centrerar sidan */
+main{
+    width:100%;
+    margin:auto;
+    padding:50px 6%;
+}
+
+/* Avstånd mellan sidans sektioner */
+section{
+
+    margin-bottom:120px;
+}
+
+/* =====================================
+   Navigation
+===================================== */
+
+/* Navigationsfält */
+header{
+
+    background:var(--white);
+
+    position:relative;
+
+}
+
+/* Markerar aktuell sida */
+.active-page{
+   text-decoration: underline !important;
+    
+}
+
+nav ul{
+
+    display:flex;
+
+    gap:2rem;
+
+    list-style:none;
+
+    padding-top: 10px;
+
+}
+
+nav a{
+    color: var(--black)
+}
+
+/* Utseende på navigationslänkar */
+.logo {
+    font-size: larger;
+    font-weight: 800;
+    text-align: center;
+}
+
+.logo a {
+    color: var(--black);
+}
+.logo a:hover {
+    color: var(--light-blue);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    background: var(--white);
+    padding:1rem 2rem;
+}
+
+.social-icons {
+    justify-self: end;
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+}
+
+.social-icon{
+    width:55px;
+    height:55px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:var(--black);
+    font-size:1.4rem;
+}
+.social-icons a:hover{
+    color: var(--light-blue)
+}
+
+/* ==========================
+   HAMBURGER
+========================== */
+
+.menu-toggle{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    color:var(--black);
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+}
+
+/* ==========================
+   JS
+========================== */
+.error{
+    background:var(--white);
+    color: var(--black);
+}
+
+/* =====================================
+   Hero
+===================================== */
+
+/* Hero-sektion */
+.hero{
+
+    background:var(--white);
+
+    display:flex;
+
+    align-items:center;
+}
+
+/* Layout för hero */
+.hero-container{
+    width:100%;
+    margin:auto;
+    padding:10px 0;
+    display:grid;
+    grid-template-columns:0.8fr 1.2fr;
+    align-items:center;
+}
+
+.hero-text{
+    width:100%;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+/* Liten rubrik ovanför huvudrubriken */
+.small-title{
+
+    color:var(--light-blue);
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+
+    font-size:.9rem;
+}
+
+/* Huvudrubrik */
+.hero h1{
+
+    font-size:4.5rem;
+
+    line-height:1.05;
+
+    margin-bottom:25px;
+
+    font-weight:800;
+}
+
+.hero span{
+
+    color:var(--blue);
+}
+
+/* Beskrivningstext */
+.hero-description{
+
+    text-align: center;
+
+    max-width:560px;
+
+    color: var(--dark-blue);
+
+    font-size:1.15rem;
+
+    margin-bottom:40px;
+}
+
+/* Centrerar profilbilden */
+.hero-image{
+
+    display:flex;
+
+    justify-content:center;
+}
+
+/* Profilbild */
+.hero-image img{
+
+    width:500px;
+
+    height:500px;
+
+    object-fit:cover;
+
+    border-radius:15%;
+
+    box-shadow:0 20px 60px rgba(15,23,42,.15);
+}
+
+/* =====================================
+   Knappar
+===================================== */
+
+
+/* Placering av knappar */
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+/* Primär kanpp */
+.primary-btn{
+
+    background:var(--blue);
+    text-decoration:none;
+    padding:10px 52px;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    color: var(--white);
+    border-radius: 20px 3px 20px 3px;
+    cursor: pointer;
+    user-select: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Hover-effekt */
+.primary-btn:hover{
+
+    background:var(--light-blue);
+}
+
+/* Sekundär knapp */
+.secondary-btn{
+
+    padding:10px 52px;
+    border:1px solid var(--light-blue);
+    color:var(--black);
+    text-decoration:none;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 20px 3px 20px 3px;
+    cursor: pointer;
+    user-select: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondary-btn:hover{
+
+    background:#F1F5F9;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* =====================================
+   Sektionsrubriker
+===================================== */
+
+/* Gemensam stil för rubriker */
+.section-title{
+
+    margin-bottom:60px;
+}
+
+/* Liten överskrift */
+.section-title p{
+
+    color:var(--blue);
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    margin-bottom:10px;
+}
+
+/* Rubrik */
+.section-title h2{
+
+    font-size:3rem;
+
+    font-weight:800;
+}
+
+
+/* =====================================
+   Om mig
+===================================== */
+
+.about-text{
+    max-width:800px;
+    margin:0 auto;
+    text-align:center;
+}
+
+.about-text h1{
+    color: var(--dark-blue);
+}
+
+.info-box{
+    padding-top: 40px;
+}
+
+/* =====================================
+   Utbildning & erfarenhet
+===================================== */
+
+.experience-section{
+    padding: 40px;
+    max-width:1100px;
+    margin:0 auto;
+}
+
+.experience-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+}
+
+.experience-column h2{
+    font-size:2rem;
+    margin-bottom:40px;
+    color:var(--dark-blue);
+}
+
+/* Tidslinje */
+
+.timeline{
+    position:relative;
+    padding-left:30px;
+    border-left:2px solid var(--light-blue);
+}
+
+.timeline-item{
+    position:relative;
+    margin-bottom:40px;
+}
+
+.timeline-item:last-child{
+    margin-bottom:0;
+}
+
+/* Punkten på tidslinjen */
+
+.timeline-item::before{
+    content:"";
+    position:absolute;
+    left:-38px;
+    top:5px;
+    width:14px;
+    height:14px;
+    background:var(--blue);
+    border-radius:50%;
+    border:3px solid var(--white);
+}
+
+/* Datum */
+
+.timeline-date{
+    display:block;
+    color:var(--light-blue);
+    font-size:.9rem;
+    font-weight:600;
+    margin-bottom:6px;
+}
+
+/* Titel */
+
+.timeline-item h3{
+    font-size:1.25rem;
+    margin-bottom:5px;
+    color:var(--black);
+}
+
+/* Beskrivning */
+
+.timeline-item p{
+    color:#64748B;
+    margin:0;
+}
+
+
+/* =====================================
+   Tekniska kunskaper
+===================================== */
+
+.skills-section{
+    padding: 40px;
+    margin-bottom:120px;
+}
+
+.skills-container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.skills-container > h2{
+    font-size:2.5rem;
+    margin-bottom:40px;
+    color:var(--dark-blue);
+}
+
+/* Grid för kompetenser */
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2, 1fr);
+
+    gap:25px;
+
+}
+
+/* Kompetenskort */
+
+.skill-card{
+
+    background:var(--white);
+
+    padding:30px;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 25px rgba(15,23,42,.05);
+
+    transition:.3s;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 35px rgba(15,23,42,.08);
+
+}
+
+/* Ikon */
+
+.skill-icon{
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#EEF2FF;
+
+    color:var(--blue);
+
+    border-radius:10px;
+
+    font-size:1.3rem;
+
+    margin-bottom:20px;
+
+}
+
+/* Rubrik */
+
+.skill-card h3{
+
+    font-size:1.3rem;
+
+    color:var(--dark-blue);
+
+    margin-bottom:18px;
+
+}
+
+/* Teknik-tags */
+
+.skill-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+}
+
+.skill-tags span{
+
+    background:#EEF2FF;
+
+    color:var(--blue);
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-size:.9rem;
+
+    font-weight:500;
+
+}
+
+/* =====================================
+   Projekt
+===================================== */
+
+.project{
+
+    display:grid;
+
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:35px;
+
+    width:100%;
+}
+
+.project-card{
+
+    background:var(--white);
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 35px rgba(15,23,42,.06);
+
+    transition:.3s;
+}
+
+.project-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(15,23,42,.10);
+}
+
+/* Projektbild */
+
+.project-image{
+
+    height:220px;
+
+    overflow:hidden;
+}
+
+.project-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+}
+
+/* Projektets text */
+
+.project-content{
+
+    padding:30px;
+}
+
+.project-content h2{
+
+    font-size:1.4rem;
+
+    color:var(--dark-blue);
+
+    margin-bottom:15px;
+}
+
+.project-content p{
+
+    color:#475569;
+
+    margin-bottom:20px;
+}
+
+/* Tekniker */
+
+.project-skills{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+    margin-top:20px;
+}
+
+.project-skill{
+
+    background:var(--blue);
+
+    color:var(--white);
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-size:.9rem;
+
+}
+
+
+
+/* =====================================
+   Kompetenser
+===================================== */
+
+/* Behållare för kompetenser */
+.skills{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+}
+
+/* Behållare för kompetenser */
+.skill{
+
+    background:var(--blue);
+
+    color:var(--white);
+
+    border:1px solid #E2E8F0;
+
+    padding:14px 22px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    cursor:default;
+
+    box-shadow:0 5px 15px rgba(15,23,42,.04);
+}
+
+/* =====================================
+Kontaktformulär
+===================================== */
+
+.contact-section{
+max-width:1200px;
+margin:auto;
+}
+
+.contact-content{
+display:grid;
+grid-template-columns:1fr 1.5fr;
+gap:60px;
+align-items:start;
+}
+
+.contact-form{
+width:100%;
+}
+
+.contact-form h2{
+margin-bottom:10px;
+}
+
+.contact-form > p{
+margin-bottom:30px;
+color:#475569;
+}
+
+.form-group{
+display:flex;
+flex-direction:column;
+margin-bottom:20px;
+}
+
+.form-group label{
+font-weight:600;
+margin-bottom:8px;
+}
+
+.form-group input,
+.form-group textarea{
+width:100%;
+padding:12px 15px;
+border:1px solid #CBD5E1;
+border-radius:8px;
+font-family:inherit;
+font-size:1rem;
+background:var(--white);
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+outline:none;
+border-color:var(--light-blue);
+}
+
+.form-group textarea{
+resize:vertical;
+}
+
+.form-message{
+margin-top:20px;
+color:var(--dark-blue);
+font-weight:600;
+}
+
+.skill-card a{
+    color:var(--blue);
+    font-weight:600
+}
+.skill-card a:hover{
+    color:var(--light-blue);
+    text-decoration: underline !important;
+    
+    
+}
+
+.section-title a{
+    color:var(--dark-blue);
+    text-decoration: underline
+}
+
+ .section-title a:hover{
+    color:var(--light-blue);
+} 
+
+/* =====================================
+   Footer
+===================================== */
+
+footer{
+
+    background:var(--white);
+
+    color:var(--black);
+
+    margin-top:120px;
+}
+
+.footer-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:50px 40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+}
+
+.footer-container h3{
+
+    color:var(--dark-blue);
+
+    text-decoration: bold;
+
+    margin-bottom:10px;
+}

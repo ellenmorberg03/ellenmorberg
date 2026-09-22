@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ellen Mörberg | Portfolio</title>
+
+
+  <!-- Egen stilmall -->
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/responsive.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= Navigering ================= -->
+    <header>
+        <div class="container">
+
+
+            <!-- Menyn som visas på mindre skärmar för att det inte får plats alla knappar på ett snyggt och smiddigt sätt -->
+            <!-- Hamburgermenyn -->
+            <button class="menu-toggle" aria-label="Open menu">
+                ☰
+            </button>
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="../index.html">MAIN</a></li>
+                    <li><a href="about.html"> ABOUT ME</a></li>
+                    <li class="active-page"><a href="projects.html">PROJECT</a></li>
+                    <li><a href="contact.html">CONTAKT ME</a></li>
+
+                </ul>
+
+            </nav>
+
+            <!-- Mitt namn, är även en länk till start sidan-->
+            <div class="logo">
+                <a href="../index.html">
+                    Ellen Mörberg
+                </a>
+            </div>
+
+
+            <div class="social-icons">
+
+                <a href="https://www.linkedin.com/in/ellen-m%C3%B6rberg-550657349/" aria-label="LinkedIn" class="social-icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://www.instagram.com/morbergellen/" aria-label="Instagram" class="social-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ================= Huvudinnehåll ================= -->
+
+    <main>
+        <section id="projects">
+            <div class="section-title">
+
+                <h1>
+                    Mina projekt
+                </h1>
+
+                <p> Här presenteras några av de projekt jag har arbetat med.</p>
+
+            </div>
+
+
+                <div class="project">
+                    
+                    <!-- Projekt 1 -->
+                    <article class="project-card">
+
+                        <!-- Projektbild -->
+                        <div class="project-image">
+
+                            <img src="../images/bil.webp" alt="Autonom Arduino-bil byggd med sensorer och egen elektronik">
+
+                        </div>
+
+                        <!-- Projektbeskrivning -->
+                        <div class="project-content">
+
+                            <h2 >Autonom Arduino-bil</h2>
+
+                            <p>
+
+                                Designade och utvecklade ett autonomt fordonssystem, inklusive konstruktion av ett eget
+                                kretskort (PCB) som integrerar sensorer, elektriska komponenter och motorstyrning.
+                                Implementerade inbyggd styrlogik för autonom navigering med hjälp av sensorfeedback.
+                                Projektet omfattade hårdvaruintegration, kretskortsdesign, programmering samt systematisk
+                                felsökning för att säkerställa tillförlitlig drift.
+
+                            </p>
+
+                            <!-- Länk till mer information -->
+                            <!-- Länken funkar inte än då raporten inte är klar -->
+                            <a href="#">Läs mer om hur bilen utvecklades</a>
+               
+                            <!-- Använda tekniker -->
+                            <div class="project-skills">
+
+                                <div class="project-skill">Inbyggda system</div>
+
+                                <div class="project-skill">PCB-design</div>
+
+                                <div class="project-skill">Sensorintegration</div>
+
+                                <div class="project-skill">C++</div>
+
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!-- Projekt 2 -->
+                    <article class="project-card">
+
+                        <!-- Projektbild -->
+                        <div class="project-image">
+
+                            <img src="../images/Startsidan.webp" 
+                            alt="Skärmbild av portfolio-webbplatsen">
+
+                        </div>
+
+                        <!-- Projektbeskrivning -->
+                        <div class="project-content">
+
+                            <h2>Portfolio-webbplats</h2>
+
+                            <p>
+
+                                Designade och utvecklade en personlig portfolio-webbplats från grunden med HTML, CSS och
+                                JavaScript. Skapade en responsiv och välstrukturerad webbplats med fokus på ren design,
+                                användarvänlighet och lättunderhållen kod. Implementerade återanvändbara komponenter och
+                                layouter för att presentera projekt, tekniska kunskaper och erfarenheter på ett
+                                professionellt sätt.
+
+                            </p>
+
+                            <!-- Använda tekniker -->
+                            <div class="project-skills">
+
+                                <div class="project-skill">HTML5</div>
+
+                                <div class="project-skill">CSS</div>
+
+                                <div class="project-skill">JavaScript</div>
+
+
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!-- Projekt 3 -->
+                    <article class="project-card">
+
+                        <!-- Projektbild -->
+                        <div class="project-image">
+
+                            <img src="../images/Industrial_Robot.webp" alt="ABB-industrierobot i RobotStudio">
+
+                        </div>
+
+                        <!-- Projektbeskrivning -->
+                        <div class="project-content">
+
+                            <h2>Programmering av ABB-industrierobot</h2>
+
+                            <p>
+
+                                Utvecklade och programmerade ett ABB-robotsystem med hjälp av RobotStudio (RAPID) och ARLA
+                                för online-styrning. Implementerade automationslogik för att sortera objekt i olika
+                                kategorier med hjälp av sensorer. Arbetade med robotkalibrering, systemintegration och
+                                strukturerad felsökning för att säkerställa en tillförlitlig och stabil funktion.
+
+                            </p>
+
+                            <!-- Använda tekniker -->
+                            <div class="project-skills">
+
+                                <div class="project-skill">RobotStudio</div>
+
+                                <div class="project-skill">RAPID</div>
+
+                                <div class="project-skill">ARLA</div>
+
+                                <div class="project-skill">Automation</div>
+
+                            </div>
+                        </div>
+
+
+                    </article>
+
+                </div>
+            
+        </section>
+    </main>
+
+    <!-- ================= Footer ================= -->
+
+  <footer>
+
+    <div class="footer-container">
+
+      <!-- Namn och utbildning -->
+
+      <div>
+
+        <h3>
+          Ellen Mörberg
+        </h3>
+
+        <p>
+          Civilingenjör • Teknisk Fysik
+        </p>
+
+      </div>
+
+      <!-- Copyright -->
+
+      <div>
+
+        <p>
+
+          © 2026
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+   <script src="../JS/main.js"></script>
+</body>
+
+</html>

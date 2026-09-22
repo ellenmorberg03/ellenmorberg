@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ellen Mörberg | Portfolio</title>
+
+
+
+ <!-- Egen stilmall -->
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/responsive.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://cdn.emailjs.com/sdk/latest/email.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+
+ <!-- ================= Navigering ================= -->
+    <header>
+        <div class="container">
+
+
+            <!-- Menyn som visas på mindre skärmar för att det inte får plats alla knappar på ett snyggt och smiddigt sätt -->
+            <!-- Hamburgermenyn -->
+            <button class="menu-toggle" aria-label="Open menu">
+                ☰
+            </button>
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="../index.html">MAIN</a></li>
+                    <li ><a href="about.html"> ABOUT ME</a></li>
+                    <li><a href="projects.html">PROJECT</a></li>
+                    <li class="active-page"> <a href="contact.html">CONTAKT ME</a></li>
+
+                </ul>
+
+            </nav>
+
+            <!-- Mitt namn, är även en länk till start sidan-->
+            <div class="logo">
+                <a href="../index.html">
+                    Ellen Mörberg
+                </a>
+            </div>
+
+
+            <div class="social-icons">
+
+                <a href="https://www.linkedin.com/in/ellen-m%C3%B6rberg-550657349/" aria-label="LinkedIn" class="social-icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://www.instagram.com/morbergellen/" aria-label="Instagram" class="social-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+
+<!-- ================= Huvudinnehåll ================= -->
+
+<main>
+
+    <section class="contact-section">
+
+        <!-- Sidrubrik -->
+
+        <div class="section-title">
+
+            <h1>Kontakt</h1>
+
+            <p>
+                Har du frågor om mina projekt, min utbildning eller vill diskutera
+                framtida möjligheter? Du är varmt välkommen att kontakta mig.
+            </p>
+
+        </div>
+
+
+        <!-- Kontaktinnehåll -->
+
+        <div class="contact-content">
+
+            <!-- Kontaktuppgifter -->
+
+            <div class="contact-box">
+
+                <h2>Kontaktuppgifter</h2>
+
+                <p>
+                    <i class="fa fa-envelope"></i>
+
+                    <a href="mailto:ellenmorberg03@gmail.com">
+                        ellenmorberg03@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <i class="fa-brands fa-linkedin"></i>
+
+                    <a href="https://www.linkedin.com/in/ellen-m%C3%B6rberg-550657349/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+                </p>
+
+                <p>
+                    <i class="fa fa-file-text"></i>
+
+                    <a href="cv.pdf" target="_blank">
+                        Visa CV
+                    </a>
+                </p>
+
+            </div>
+
+
+            <!-- Kontaktformulär -->
+
+            <div class="contact-form">
+
+                <h2>Skicka ett meddelande</h2>
+
+                <p>
+                    Fyll i formuläret så återkommer jag så snart som möjligt.
+                </p>
+
+
+                <form id="contact-form">
+
+                    <!-- Namn -->
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Namn
+                        </label>
+
+                        <input
+                            id="name"
+                            name="name"
+                            type="text"
+                            required>
+
+                    </div>
+
+
+                    <!-- E-post -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            E-post
+                        </label>
+
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            required>
+
+                    </div>
+
+
+                    <!-- Ämne -->
+
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Ämne
+                        </label>
+
+                        <input
+                            id="subject"
+                            name="subject"
+                            type="text"
+                            required>
+
+                    </div>
+
+
+                    <!-- Meddelande -->
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Meddelande
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            required></textarea>
+
+                    </div>
+
+
+                    <!-- Skicka-knapp -->
+
+                    <button
+                        type="submit"
+                        class="primary-btn">
+                        Skicka
+                    </button>
+
+
+                    <!-- Meddelande från JavaScript -->
+
+                    <p
+                        id="form-message"
+                        class="form-message"
+                        aria-live="polite">
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ================= Footer ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div>
+
+            <h3>
+                Ellen Mörberg
+            </h3>
+
+            <p>
+                Civilingenjör • Teknisk Fysik
+            </p>
+
+        </div>
+
+        <div>
+
+            <p>
+                © 2026
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- JavaScript -->
+
+<script src="../JS/main.js"></script>
+<script src="../JS/contact.js"></script>
+
+</body>
+
+</html>

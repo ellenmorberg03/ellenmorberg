@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ellen Mörberg | Portfolio</title>
+
+
+ <!-- Egen stilmall -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/responsive.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= Navigering ================= -->
+    <header>
+        <div class="container">
+
+
+            <!-- Menyn som visas på mindre skärmar för att det inte får plats alla knappar på ett snyggt och smiddigt sätt -->
+            <!-- Hamburgermenyn -->
+            <button class="menu-toggle" aria-label="Open menu">
+                ☰
+            </button>
+
+            <nav>
+
+                <ul>
+
+                    <li class="active-page"><a href="index.html">MAIN</a></li>
+                    <li><a href="HTML/about.html"> ABOUT ME</a></li>
+                    <li ><a href="HTML/projects.html">PROJECT</a></li>
+                    <li><a href="HTML/contact.html">CONTAKT ME</a></li>
+
+                </ul>
+
+            </nav>
+
+            <!-- Mitt namn, är även en länk till start sidan-->
+            <div class="logo">
+                <a href="index.html">
+                    Ellen Mörberg
+                </a>
+            </div>
+
+
+            <div class="social-icons">
+
+                <a href="https://www.linkedin.com/in/ellen-m%C3%B6rberg-550657349/" aria-label="LinkedIn" class="social-icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://www.instagram.com/morbergellen/" aria-label="Instagram" class="social-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- ================= Huvudinnehåll ================= -->
+
+    <main>
+
+        <!-- ================= Hero ================= -->
+
+        <div class="hero">
+
+            <div class="hero-container">
+
+
+
+                <!-- Portfoliebild-->
+                <div class="hero-image">
+
+                    <img src="images/Profilbild.webp" alt="Profilbild av Ellen Mörberg">
+
+                </div>
+
+                <div class="hero-text">
+
+                    <p class="small-title">
+                        CIVILINGENJÖRSSTUDENT
+                    </p>
+
+                    <!-- Introduktion om mig -->
+                    <h1>
+
+                        Hej!<br>
+
+                        Jag heter
+                        <span>Ellen Mörberg</span>
+
+                    </h1>
+
+                    <p class="hero-description">
+
+                        Jag studerar Teknisk Fysik vid Uppsala universitet och
+                        brinner för programmering, matematik och problemlösning.
+                        Jag tycker om att utveckla smarta lösningar och lär mig
+                        ständigt nya tekniker genom egna projekt.
+
+                    </p>
+
+                    <!-- Knappar som göt att navegeringen blir lättare -->
+                    <div class="hero-buttons">
+
+                        <a href="HTML/projects.html" class="primary-btn">
+                            Mina projekt
+                        </a>
+
+                        <a href="HTML/about.html" class="secondary-btn">
+                            Läs mer
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================= Om mig ================= -->
+
+        <section id="about" class="about">
+
+            <!-- Rubrik för sektionen -->
+            <div class="section-title">
+
+                <p>Om mig</p>
+
+                <h2>
+                    Vem är jag?
+                </h2>
+
+                <!-- Länk till den fullständiga "Om mig"-sidan -->
+                <a href="HTML/about.html"> Läs mer</a>
+
+            </div>
+
+            <!-- Presentation och faktaruta -->
+            <div class="about-grid">
+
+                <!-- Kort presentation -->
+                <div>
+
+                    <p>
+
+                        Jag heter Ellen Mörberg och studerar Teknisk Fysik vid
+                        Uppsala universitet.
+
+                    </p>
+
+                    <br>
+
+                    <p>
+
+                        Under utbildningen har jag utvecklat ett stort intresse
+                        för programmering, algoritmer, matematik och tekniska
+                        lösningar.
+
+                    </p>
+
+                    <br>
+
+                    <p>
+
+                        Jag gillar att kombinera teori med praktik och utvecklar
+                        gärna egna projekt för att lära mig nya språk,
+                        ramverk och arbetssätt.
+
+                    </p>
+
+                </div>
+
+                <!-- Snabb fakta -->
+                <div class="info-box">
+
+                    <h3>Snabb fakta</h3>
+
+                    <ul>
+
+                        <li><i class="fa fa-location-dot"></i> Uppsala</li>
+                        <li><i class="fa fa-graduation-cap"></i> Teknisk Fysik</li>
+                        <li><i class="fa-solid fa-code"></i>Programmering</li>
+                        <li><i class="fa-solid fa-calculator"></i> Matematik</li>
+                        <li><i class="fa-solid fa-gear"></i>Problemlösning</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= Projekt ================= -->
+
+        <section id="projects">
+
+            <!-- Rubrik för projektsektionen -->
+            <div class="section-title">
+
+                <p>Portfolio</p>
+
+                <h2>
+                    Utvalda projekt
+                </h2>
+
+                <!-- Länk till projektsidan -->
+                <a href="HTML/projects.html"> Se vilka mer projekt jag har hållit på med</a>
+
+            </div>
+
+            <!-- Projektkort -->
+            <div class="projects-grid">
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="images/bil.webp" alt="Autonom Arduino-bil byggd med sensorer">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Autonom Arduino-bil</h3>
+
+                        <p>
+
+                            Designade och utvecklade ett autonomt fordon med ett specialdesignat kretskort (PCB),
+                            sensorer och motorstyrning. Projektet omfattade hårdvaruintegration, programmering och
+                            systematisk felsökning.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="images/Startsidan.webp" alt="Skärmbild av portfolio-webbplatsen">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Portfolio-webbplats</h3>
+
+                        <p>
+
+                            Designade och utvecklade en personlig portfolio-webbplats med HTML, CSS och Bootstrap. Fokus
+                            låg på responsiv design, användarvänlighet och en strukturerad presentation av projekt och
+                            tekniska kunskaper.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="images/Industrial_Robot.webp" alt="Bild på en ABB-industrierobot">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Programmering av ABB-industrierobot</h3>
+
+                        <p>
+
+                            Programmerade ett ABB-robotsystem i RobotStudio (RAPID) och ARLA för automatisk sortering av
+                            objekt med hjälp av sensorer. Arbetade med robotkalibrering, systemintegration och
+                            felsökning för att säkerställa en tillförlitlig funktion.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ================= Kunskap ================= -->
+
+        <section id="skills">
+
+            <!-- Rubrik för kompetenser -->
+            <div class="section-title">
+
+                <p>Kompetenser</p>
+
+                <h2>
+                    Tekniker jag arbetar med
+                </h2>
+
+            </div>
+
+            <!-- Lista över tekniska kunskaper -->
+            <div class="skills">
+
+                <div class="skill">Python</div>
+
+                <div class="skill">C++</div>
+
+                <div class="skill">JavaScript</div>
+
+                <div class="skill">HTML</div>
+
+                <div class="skill">CSS</div>
+
+                <div class="skill">Arduino</div>
+
+                <div class="skill">PCB-design</div>
+
+                <div class="skill">RobotStudio</div>
+
+
+            </div>
+
+        </section>
+
+        <!-- ================= Kontakta ================= -->
+
+        <section id="contact">
+
+            <!-- Rubrik för kontaktsektionen -->
+            <div class="section-title">
+
+                <p>Kontakt</p>
+
+                <h2>
+                    Hör gärna av dig
+                </h2>
+
+                <!-- Länk till kontaktsidan -->
+                <a href="HTML/contact.html"> Här hittar du mina kotaktuppgifter</a>
+
+
+            </div>
+
+            <!-- Kontaktuppgifter -->
+            <div class="contact-box">
+
+                <div>
+                    <h3>Kontaktuppgifter</h3>
+
+                    <div class="contact-buttons">
+
+                        <a class="secondary-btn" 
+                        href="https://www.linkedin.com/in/ellen-m%C3%B6rberg-550657349/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                            <i class="bi bi-linkedin"></i> LinkedIn
+                        </a>
+
+                       <!--<a class="secondary-btn" 
+                        href="cv.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                            <i class="bi bi-file-earmark-text"></i> Visa CV
+                        </a>-->
+
+                        <a class="primary-btn" href="mailto:ellenmorberg03@gmail.com">
+                            Skicka mail
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= Footer ================= -->
+
+  <footer>
+
+    <div class="footer-container">
+
+      <!-- Namn och utbildning -->
+
+      <div>
+
+        <h3>
+          Ellen Mörberg
+        </h3>
+
+        <p>
+          Civilingenjör • Teknisk Fysik
+        </p>
+
+      </div>
+
+      <!-- Copyright -->
+
+      <div>
+
+        <p>
+
+          © 2026
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+   <!-- JavaScript -->
+
+    <script src="JS/main.js"></script>
+
+</body>
+
+</html>
