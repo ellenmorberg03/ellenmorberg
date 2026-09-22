@@ -20,7 +20,7 @@ body{
 
     font-family:"Inter",sans-serif;
 
-    background: red;
+    background:var(--white);
 
     color:var(--black);
 
